@@ -1,1 +1,11 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int a=4,b=6;
+    char ch='A';
+    bool is_true=true;
+   // cout<<"The value of a= "<<a<<"\nThe value of b= "<<b;
+   // cout<<ch;
+    cout<<is_true;
 
+}
