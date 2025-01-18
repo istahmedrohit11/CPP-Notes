@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+int num1=45;
+int main(){
+    int num1=90;
+    cout<<"The number is: "<<num1<<endl;
+    cout<<"The global number is: "<<::num1;
+
+    
+}
