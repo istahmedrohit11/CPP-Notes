@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int age;
+    cout<<"Tell me your age: ";
+    cin>>age;
+    if(age<18){
+        cout<<"You can not Enter";
+    }else if(age==18){
+        cout<<"under 18.not enter";
+    }else{
+        cout<<"Please Enter.";
+    }
+
+}
