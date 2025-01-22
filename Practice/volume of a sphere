@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+int main(){
+   int r;
+   cout<<"Enter Radius number:";
+   cin>>r;
+   float y=3.1416;
+   cout<<"The  is: "<<((4.0/3.0)*y*r*r*r);
+
+}
