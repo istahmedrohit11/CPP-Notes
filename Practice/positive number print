@@ -1,0 +1,6 @@
+#include<iostream>
+using namespace std;
+int main(){
+   int result= abs(-2);
+   cout<<result;
+   }
