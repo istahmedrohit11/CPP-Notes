@@ -1,0 +1,57 @@
+// Output:
+// A B C D 
+// A B C D 
+// A B C D 
+// A B C D 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Code Explanation:
+// The program uses nested loops to print a 4x4 pattern of characters.
+// - The outer loop (variable `i`) runs 4 times (0 to 3).
+// - The inner loop (variable `j`) also runs 4 times (0 to 3).
+// - Inside the inner loop, a character variable `ch` is initialized to 'A' at the start of each row.
+// - The inner loop prints the value of `ch` and increments it, so it prints 'A' to 'D' in each row.
+// - After the inner loop completes, `cout << endl;` moves to the next line.
+// - As `ch` is reinitialized to 'A' in every iteration of the outer loop, the same sequence is printed in all rows.
+
+#include <iostream>
+using namespace std;
+int main() {
+    int i, j;
+    for (i = 0; i < 4; i++) {
+        char ch = 'A'; // Reset ch to 'A' at the start of each row
+        for (j = 0; j < 4; j++) {
+            cout << ch << " "; // Print character and a space
+            ch++; // Move to next character
+        }
+        cout << endl; // Move to the next line after printing 4 characters
+    }
+}
