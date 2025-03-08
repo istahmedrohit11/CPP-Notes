@@ -1,0 +1,54 @@
+// Output:
+// 1 2 3 4 
+// 1 2 3 4 
+// 1 2 3 4 
+// 1 2 3 4 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Code Explanation:
+// - The program prints a 4x4 numerical pattern using nested loops.
+// - The outer loop (`i`) runs 4 times (0 to 3), controlling the rows.
+// - The inner loop (`j`) runs 4 times (0 to 3), printing `j + 1`, which results in numbers from 1 to 4 in each row.
+// - Since `j` starts from 0, adding 1 (`j + 1`) ensures that numbers start from 1 instead of 0.
+// - Each row prints "1 2 3 4" because `j` resets to 0 in every new iteration of the outer loop.
+// - `cout << endl;` moves to the next line after printing 4 numbers.
+
+#include <iostream>
+using namespace std;
+int main() {
+    int i, j;
+    for (i = 0; i < 4; i++) { // Outer loop for rows
+        for (j = 0; j < 4; j++) { // Inner loop for columns
+            cout << j + 1 << " "; // Print numbers from 1 to 4
+        }
+        cout << endl; // Move to the next line
+    }
+}
