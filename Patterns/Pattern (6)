@@ -1,0 +1,54 @@
+// Output:
+// 1 
+// 1 2 
+// 1 2 3 
+// 1 2 3 4 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Code Explanation:
+// - The program prints a right-angled triangular number pattern using nested loops.
+// - The outer loop (`i`) runs 4 times (0 to 3), controlling the number of rows.
+// - The inner loop (`j`) runs from 0 to `i`, meaning the number of elements in each row increases as `i` increases.
+// - `cout << j + 1 << " ";` prints numbers starting from 1 to `i+1` in each row because `j` starts from 0.
+// - The number of columns printed in each row is equal to `i + 1`.
+// - `cout << endl;` moves to the next line after printing numbers in each row, forming a triangular pattern.
+
+#include <iostream>
+using namespace std;
+int main() {
+    int i, j;
+    for (i = 0; i < 4; i++) { // Outer loop for rows
+        for (j = 0; j <= i; j++) { // Inner loop for columns
+            cout << j + 1 << " "; // Print numbers from 1 to i+1
+        }
+        cout << endl; // Move to the next line
+    }
+}
