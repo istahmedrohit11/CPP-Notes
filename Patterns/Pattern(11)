@@ -1,0 +1,61 @@
+// Output:
+// ABCD
+// -BCD
+// --CD
+// ---D
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include<iostream>
+using namespace std;
+int main(){
+    int i,j;
+    char ch;
+    for(i=0;i<4;i++){
+        ch='A';
+        for(j=0;j<i;j++){
+              cout<<"-";
+              ch++;
+        }
+        for(j=0;j<4-i;j++){
+            cout<<ch<<"";
+          }
+          cout<<endl;
+        }
+    }
