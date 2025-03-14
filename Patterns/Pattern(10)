@@ -1,0 +1,58 @@
+// Output:
+// 1111
+// .222
+// ..33
+// ...4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include<iostream>
+using namespace std;
+int main(){
+    int i,j;
+    for(i=0;i<4;i++){
+        for(j=0;j<i;j++){
+              cout<<".";
+        }
+        for(j=0;j<4-i;j++){
+            cout<<i+1<<"";
+          }
+          cout<<endl;
+        }
+    }
