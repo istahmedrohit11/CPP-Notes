@@ -1,0 +1,9 @@
+#include<iostream>
+using namespace std;
+int main(){
+  int asciiValue;
+  cout<<"Enter Ascii Value:";
+  cin>>asciiValue;
+  char ch=static_cast<char>(asciiValue);
+  cout<<"The character for ASCII "<< asciiValue<<" is: "<<ch;
+}
