@@ -1,0 +1,14 @@
+#include<iostream>
+#include <cctype>
+using namespace std;
+int main(){
+  char ch;
+  cout<<"Enter character: ";
+  cin>>ch;
+  if(ch>='a' && ch<='z'){
+   char uppercase=toupper(ch);
+   cout<<"Upper letter of "<<ch<<" is :"<<uppercase;
+  }else{
+    cout<<"please enter a lower letter.";
+  }
+}
