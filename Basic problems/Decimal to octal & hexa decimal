@@ -1,0 +1,9 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int decimal=100;
+    cout<<"Octal: "<<oct<<decimal<<endl;
+    cout<<"Hexa desimal:"<< hex<<decimal<<endl;
+
+    return 0;
+}
