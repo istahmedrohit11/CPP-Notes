@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+void SwapFirstLastDigit(int num){
+    int temp=num,firstDigit,lastDigit=num%10;
+    int divisor=1;
+    while(temp>=10){
+        temp=temp/10;
+        divisor=divisor*10;
+    }
+    firstDigit=temp;
+    int middlePart=(num%divisor)/10;
+    int Value= (lastDigit*divisor)+(middlePart*10)+ firstDigit;
+    cout<<"After swap first and last digit: "<<Value;
+}
+int main(){
+    int num;
+    cout<<"Enter Any Number:";
+    cin>>num;
+    SwapFirstLastDigit(num);
+    return 0;
+}
