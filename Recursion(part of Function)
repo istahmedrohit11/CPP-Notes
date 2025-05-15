@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+int calculateFactorial(int n){
+    if(n <= 1)
+        return 1;  // Base case
+    else
+        return n * calculateFactorial(n - 1);  // Recursive call
+}
+
+int main(){
+    int n;
+    cout << "Enter the Number" << endl;
+    cin >> n;
+
+    if (n < 0)
+        cout << "Factorial is not defined for negative numbers." << endl;
+    else
+        cout << "The factorial of " << n << " is: " << calculateFactorial(n) << endl;
+
+    return 0;
+}
