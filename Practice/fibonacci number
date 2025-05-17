@@ -1,0 +1,16 @@
+
+#include<iostream>
+using namespace std;
+int main(){
+    int n,i;
+    cout<<"Enter a n: ";
+    cin>>n;
+    int first=0,second=1,next;
+    cout<<"first "<<n<<" fibonacci numbers:";
+    for(i=1;i<=n;i++){
+        cout<<first<<" ";
+        next=first+second;
+        first=second;
+        second=next;
+    }
+}
