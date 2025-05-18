@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int Units;
+    cout<<"Enter total electricity units consumed:  ";
+    cin>>Units;
+    float total=0;
+    if(Units<=100){
+    }else if( Units>=101 && Units<=200){
+        total=(Units-100)*5;
+    }else{
+        total=(100*5) +(Units-200)*10;
+       
+    }
+     cout<<"Total Units of "<<Units<<" unit is:"<<total<<"taka";
+    return 0;
+}
