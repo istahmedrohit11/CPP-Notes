@@ -1,0 +1,26 @@
+//<cctype> is a C++ standard library header that provides functions to
+// classify and transform individual characters
+    // isalpha(ch)	Returns true if ch is a letter (A-Z or a-z)
+    // isdigit(ch)	Returns true if ch is a digit (0-9)
+    // isalnum(ch)	Returns true if ch is a letter or digit
+    // isspace(ch)	Returns true if ch is a whitespace char
+    // islower(ch)	Returns true if ch is a lowercase letter
+    // isupper(ch)	Returns true if ch is an uppercase letter
+
+
+#include<iostream>
+#include<cctype>
+using namespace std;
+int main(){
+    char ch;
+    cout<<"Enter:";
+    cin>>ch;
+    if(isalpha(ch)){
+        cout<<"Its a letter";
+    }else if(isdigit(ch)){
+        cout<<"Its a digit";
+    }else{
+        cout<<"its a special character ";
+    }
+}
+
