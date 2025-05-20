@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int HCF(int a,int b){
+    if(b==0){
+        return a;
+    }
+    while(b!=0){
+        int temp=b;
+        b=a%b;
+        a=temp;
+    }
+    return a;
+}
+int main(){
+    int x,y;
+    cout<<"Enter two numbers:"<<endl;
+    cin>>x>>y;
+    cout<<"Highest common factor of "<<x<<" and "<<y<<" is: "<<HCF(x,y)<<endl;
+    printf("Highest common factor of %d and %d is: %d",x,y,HCF(x,y));
+}
