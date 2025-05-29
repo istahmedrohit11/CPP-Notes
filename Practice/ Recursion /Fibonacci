@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+// Recursive function to calculate nth Fibonacci number
+int fibonacci(int x){
+    if(x==0) return 0;
+    if(x==1) return 1;
+    return fibonacci(x-1)+fibonacci(x-2);
+}
+// Function to print Fibonacci sequence up to the nth term
+void printFibonacci(int n){
+    if(n <= 0) return;
+    printFibonacci(n - 1);
+    cout << fibonacci(n-1) << " ";
+}
+
+int main() {
+    int x;
+    cout << "Enter a number: ";
+    cin >> x;
+    cout << "Fibonacci sequence up to " << x << " terms: ";
+    printFibonacci(x);
+    cout << endl;
+
+    return 0;
+}
