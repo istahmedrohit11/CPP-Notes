@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int countDigits(int x){
+    if(x==0) return x;
+    return 1+ countDigits(x/10);
+    
+}
+int main(){
+    int n;
+    cout<<"Enter a number:";
+    cin>>n;
+    if (n == 0)
+        cout << "The digits number is: 1";
+    else
+        cout << "The digits number is: " << countDigits(n);
+}
