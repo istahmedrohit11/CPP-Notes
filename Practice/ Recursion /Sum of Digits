@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int sumDigits(int x){
+    if(x==0) return x;
+    return (x %10 )+sumDigits( x/10 );
+}
+int main(){
+    int n;
+    cout<<"Enter a number:";
+    cin>>n;
+    cout<<"The Sum is:"<<sumDigits(n);
+}
