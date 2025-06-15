@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int arr[6]={20,37,40,50,11,40};
+    int length=sizeof(arr)/sizeof(arr[0]);
+    int x=400;
+    bool found=false;
+    for(int i=0;i<length;i++){
+        if(arr[i]==x){
+            cout<<"Match found at index: "<<i<<endl;
+            found=true;
+            }
+        }
+        if(found==false){
+            cout<<"No Element found";
+        }
+        
+}
+
+
+
+
+    
+    
+
