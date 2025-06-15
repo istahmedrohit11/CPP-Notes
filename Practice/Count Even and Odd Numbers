@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+    int arr[5] = {20, 37, 40, 50, 11};
+    int evenCount = 0;
+    int length = sizeof(arr) / sizeof(arr[0]);
+
+    for(int i = 0; i < length; i++){
+        if(arr[i] % 2 == 0){
+            evenCount++;
+        }
+    }
+
+    int oddCount = length - evenCount;
+
+    cout << "The number of Even numbers is: " << evenCount << endl;
+    cout << "The number of Odd numbers is: " << oddCount << endl;
+
+    return 0;
+}
