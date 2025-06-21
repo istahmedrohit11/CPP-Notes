@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+void merge(int A[], int B[], int C[], int m, int n) {
+    int i = 0, j = 0, k = 0;
+
+    // Merge both arrays until one is exhausted
+    while (i < m && j < n) {
+        if (A[i] < B[j])
+            C[k++] = A[i++];
+        else
+            C[k++] = B[j++];
+    }
+
+    // Copy any remaining elements from A
+    while (i < m)
+        C[k++] = A[i++];
+
+    // Copy any remaining elements from B
+    while (j < n)
+        C[k++] = B[j++];
+}
+
+int main() {
+    int A[] = {1, 3, 5, 7};
+    int B[] = {2, 4, 6, 8, 10};
+    int m = sizeof(A) / sizeof(A[0]);
+    int n = sizeof(B) / sizeof(B[0]);
+
+    int C[m + n];
+
+    merge(A, B, C, m, n);
+
+    cout << "Merged array: ";
+    for (int i = 0; i < m + n; i++)
+        cout << C[i] << " ";
+
+    return 0;
+}
