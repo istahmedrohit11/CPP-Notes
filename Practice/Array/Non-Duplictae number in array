@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+    int arr[] = {4, 1, 2, 1, 4, 2,77};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    
+
+    for(int i = 0; i < n; i++) {
+        bool isDuplicate = false;
+        
+        // Check if the current number has a duplicate
+        for(int j = 0; j < n; j++) {
+            if(i != j && arr[i] == arr[j]) {
+                isDuplicate = true;
+                break; // Found duplicate, no need to continue checking
+            }
+        }
+        
+        // If it's not a duplicate, print it
+        if(!isDuplicate) {
+            cout << "Non Duplicate number is: " << arr[i] << endl;
+        } 
+    }
+    
+
+    return 0;
+}
