@@ -1,0 +1,19 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+
+int main(){
+   vector<char> vec={'a','b','c','d','e'};
+    cout<<vec.size()<<endl;
+    vec.push_back('f');
+    cout<<vec.size()<<endl;
+    vec.pop_back();// delete f
+    for(char val: vec){
+        cout<<val<<" ";
+    }
+    cout<<endl;
+    cout<<vec.front()<<endl;
+    cout<<vec.back()<<endl;
+    
+    cout<<vec.at(2)<<endl;//output is : c
+}
