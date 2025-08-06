@@ -1,0 +1,20 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+
+int main(){
+    vector<int>number={1,2};
+    number.insert(number.begin()+2,3);  // Insert '3' at index 2
+    cout<<"After insert:";
+    for(int i=0;i<number.size();i++){
+        cout<<number[i]<<" ";
+    }
+    cout<<endl;
+    cout<<"After erase:";
+    number.erase(number.begin() +0);
+    for(int i=0;i<number.size();i++){
+        cout<<number[i]<<" ";
+    }
+}
+
+
