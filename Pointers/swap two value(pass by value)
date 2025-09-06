@@ -12,3 +12,46 @@ int main(){
     cout<<a<<" "<<b;
     
 }  
+
+
+
+
+
+Key Ideas about Pointers
+A pointer is a variable that stores the address of another variable.
+Example: int* x means "x is a pointer to an integer".
+The & operator gives the address of a variable.
+Example: &a means "address of a".
+The * operator (dereference) lets you access the actual value stored at the address the pointer points to.
+Example: If x points to a, then *x means "value of a".
+
+Step-by-Step Execution
+
+1. main() function
+int a = 8, b = 66;
+swap(&a, &b);
+
+Here, a = 8 and b = 66.
+&a is the address of a in memory (say 0x100).
+&b is the address of b (say 0x104).
+These addresses are passed into swap.
+So inside swap,
+x points to a (x = 0x100)
+y points to b (y = 0x104)
+
+2. Inside swap(int* x, int* y)
+int temp = *x;
+*x means "the value stored at address x".
+Since x points to a, *x = a = 8.
+So temp = 8.
+
+*x = *y;
+*y means "the value stored at address y".
+Since y points to b, *y = b = 66.
+Now, *x = *y means "store 66 in the variable pointed by x".
+Since x points to a, this sets a = 66.
+*y = temp;
+
+Now temp = 8.
+*y means "value of variable pointed by y" → that is b.
+So *y = temp means b = 8.
