@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+void num(int n){
+    int last,first; 
+    last=n%10;
+    while((n/10)!= 0){
+        
+        n=n/10;
+    }
+    
+    cout<<"Last value:"<<last<<endl;
+    cout<<"First value:"<<n<<endl;
+    
+}
+int main(){
+    int number=92345;
+    int* ptr=&number;
+    num(*ptr);
+    return 0;
+}
