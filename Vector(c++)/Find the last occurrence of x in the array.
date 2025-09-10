@@ -1,0 +1,21 @@
+#include<bits/stdc++.h>
+using namespace std;   
+
+int main(){
+    vector<int>v;   
+    v.push_back(91);  
+    v.push_back(8);
+    v.push_back(88);
+    v.push_back(12);
+    v.push_back(86);
+    v.push_back(950);
+    v.push_back(91);
+    int x=91;
+    int idx=-1;
+    for(int i=v.size()-1;i>=0;i--){
+        if(v[i]==x) idx=i;
+        break;
+    } 
+    cout<<idx;
+} 
+
