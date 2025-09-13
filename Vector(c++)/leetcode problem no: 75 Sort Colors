@@ -1,0 +1,16 @@
+void sortColors(vector<int>& nums) {
+    int n=nums.size();
+    int nOne=0;
+    int nZero=0;
+    int nTwo=0;
+    for(int i=0;i<n;i++){
+        if(nums[i]==0) nZero++;
+        else if(nums[i]==1) nOne++;
+        else nTwo++;
+    }
+    for(int i=0;i<n;i++){
+        if(i<nZero) nums[i]=0;
+        else if(i<(nZero+nOne)) nums[i]=1;  
+        else nums[i]=2;
+    }
+    }
