@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+#include<cstdlib>
+using namespace std;
+int main(){
+    int t,x,y,z,a;
+    cin>>t;
+    while(t--){
+    cin>>x>>y>>z>>a;
+    int b,c;
+    b=abs(x-z);
+    c=abs(y-a);
+    cout<<max(b,c)<<endl;
+    }
+} 
