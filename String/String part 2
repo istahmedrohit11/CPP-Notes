@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+#include<string>
+using namespace std;
+
+int main() {
+   //string str="IA Rohit ";
+   //cout<<str<<endl;
+
+    // string s;
+    // cout<<"Enter only one word:"<<endl;
+    // cin>>s; //it works only when there is no spaces
+    // cout<<s<<endl;
+
+   // string name;
+   // getline(cin,name);// it can take a full sentence 
+   // cout<<name;
+
+   
+}
