@@ -1,0 +1,43 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+    // string is a character array
+    // char str[4]={'a','b','x','y'};
+    // for(int i=0;i<4;i++){
+    //     cout<<str[i]<<"";
+    // }
+    // cout<<endl;
+
+    // char str2[]="abcd";
+    // for(int i=0;i<4;i++){
+    //     cout<<str2[i]<<"";
+    // }
+    // cout<<endl;
+    //see both output are same
+    
+    //after these {'a','b','x','y'} characters these was a another thing add with its last
+    //that was '\0'
+    //cout<<(int)(str[4]);//output:0 //this is the prove
+   // cout<<endl;
+
+    //int arr[5]="12345"; //this is error
+    //char ch='\0';
+   // cout<<(int)ch; ///output:0 
+    //cout<<endl;
+
+    //we can print in this way
+    // char str3[]={'a','b','x','y'};
+    // for(int i=0;str3[i]!='\0';i++){
+    //     cout<<str3[i]<<"";
+    // }
+
+    //we can also print in this way
+    char str[]={'a','b','x','y'};
+        cout<<str;// abcd
+        cout<<endl;
+     char strr[]={'a','b','\0','x','y'};
+        cout<<strr;// ab
+    
+
+}
