@@ -1,0 +1,46 @@
+#include<bits/stdc++.h>
+#include<string>
+using namespace std;
+
+int main(){
+    //BulidInFucntions in string
+
+//    string str="Hello I am Rohit";
+//     cout<<str.size()<<endl;  //16
+//     cout<<str.length()<<endl; //16
+
+//    string str="abcd";    
+//    str.push_back('e');
+//    cout<<str<<endl;
+//    str.pop_back();
+//    cout<<str<<endl;
+
+// + operation
+// string s="rohit";
+// string t=" CSE";
+// cout<<s+t<<endl;
+// //we can modify left or right or middle
+// s= s +" died in "+ t;
+// cout<<s<<endl;
+
+//reverse
+// string str="ABCDE";
+// //reverse(str.begin()+1, str.end());
+// reverse(str.begin()+1, str.begin()+4); //reverse BCD
+// cout<<str;
+
+// substr()
+    // string s="ABCDEF";
+    // cout<<s.substr(1)<<endl;//this thing will print from that indext value to last
+    // cout<<s.substr(1,2)<<endl;//this thing will print between these index
+
+// to_string
+    //remember string doesnt support typecusting
+    // int x=143;
+    // string s=to_string(x);
+    // cout<<s;
+    //suppose have to count how many digits a have with a loop
+    // int n=123456;
+    // string s=to_string(n);
+    // cout<<s.length();
+}
