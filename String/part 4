@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+#include<string>
+using namespace std;
+
+int main(){
+    //in c++ strings are mutable 
+    //strings are immutable in java 
+    //remember this
+   string str="Rohit";
+    str[1]='a';
+    cout<<str;
+}
