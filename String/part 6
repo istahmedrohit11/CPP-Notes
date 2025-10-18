@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+#include<string>
+using namespace std;
+
+int main(){
+    // string s="ROHIT";
+    // sort(s.begin(),s.end());
+    // cout<<s<<endl;// sort in ASCII values order
+
+    string s="I AM ROHIT";
+    //getline(cin,s);
+    sort(s.begin(),s.end());
+    cout<<s<<endl;//at first get the spaces then sort in ASCII values order
+    
+}
