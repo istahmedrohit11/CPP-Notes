@@ -1,0 +1,13 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    string str="123456";
+    int x=stoi(str); // string to integer
+    cout<<x<<endl;
+
+    long long y=stoll(str);// string to long long
+    cout<<y<<endl;
+
+}
+
