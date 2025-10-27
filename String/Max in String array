@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+
+// int main(){
+//     vector<string> str= {"0123","0023","456","00182","940","002901"};
+//     vector<int> y(str.size());
+//     for(int i=0;i<str.size();i++){
+//         y[i]=stoi(str[i]); 
+//     }
+//     int mx=*mx_element(y.begin(),y.end());
+//     cout<<mx<<endl;
+// }
+
+int main(){
+    string arr[]= {"0123","0023","456","00182","940","002901"};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    int mx=stoi(arr[0]);
+    string max2;
+    for(int i=0;i<n;i++){
+        int x= stoi(arr[i]);
+        max2=arr[0];
+        if(x>mx){ 
+            mx=x;
+            max2=arr[i];
+        }
+    } cout<<mx<<" "<<max2;
+
+}
