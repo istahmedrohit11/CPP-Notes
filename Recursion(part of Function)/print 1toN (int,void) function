@@ -1,0 +1,54 @@
+// #include <iostream>
+// using namespace std;
+// int sumcal(int n, int i, int sum) {
+//     if (i > n)
+//         return sum;
+
+//     return sumcal(n, i + 1, sum + i);
+// }
+// int main() {
+//     int x = sumcal(5, 1, 0);
+//     cout << x;
+// }
+
+#include <iostream>
+using namespace std;
+
+void sumcal(int n, int i, int &sum) {
+    if (i > n)
+        return;
+
+    sum += i;
+    sumcal(n, i + 1, sum);
+}
+
+int main() {
+    int sum = 0;
+    sumcal(5, 1, sum);
+    cout << sum;
+}
+
+// #include<iostream>
+// using namespace std;
+// void sum1toN(int sum,int n){
+//     if(n==0){
+//         cout<<sum<<endl;
+//         return;
+//     }
+//     sum1toN(sum+n,n-1);
+// }
+// int main(){
+//     sum1toN(0,2);
+// }
+
+
+#include<iostream>
+using namespace std;
+int sum1toN(int sum,int n){
+    if(n==0) return sum;
+    return sum1toN(sum+n,n-1);
+}
+int main(){
+    
+    cout<<sum1toN(0,4);
+}
